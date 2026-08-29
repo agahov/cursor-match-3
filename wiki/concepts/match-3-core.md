@@ -1,6 +1,6 @@
 # Match-3 core loop
 
-**Status:** Cycle 1 research — provisional baseline
+**Status:** Cycle 1 research — agreed baseline; tuning pending
 
 This note defines the smallest coherent Match-3 rule set for the workflow
 fixture. It is a design hypothesis, not a product commitment or an engine
@@ -12,6 +12,12 @@ decision. Canonical terms are in [`../glossary.md`](../glossary.md).
 - Keep rule outcomes deterministic and independent of animation timing.
 - Make the first playable slice small enough to walk through manually.
 - Leave special content, progression, and online systems outside the baseline.
+
+## Fixture identity
+
+This is an abstract, local, single-player workflow fixture rather than a
+product pitch. Its placeholder presentation is a board of simple rounded
+square tiles with high-contrast symbols; it has no narrative or social layer.
 
 ## Core loop
 
@@ -75,8 +81,9 @@ outcome.
 
 ## Art and player model (G5–G6)
 
-- Use placeholders first: high-contrast tiles with a distinct symbol or shape
-  in addition to color. This keeps the fixture readable for color-blind users.
+- Use placeholders first: simple rounded square tiles with a distinct symbol
+  or shape in addition to color. This keeps the fixture readable for
+  color-blind users.
 - Treat the game as local and single-player. No accounts, server state,
   matchmaking, or network dependency is needed for the fixture.
 - Defer original art, narrative, progression, and social features until a
