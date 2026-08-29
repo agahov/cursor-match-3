@@ -20,9 +20,9 @@ Does **not** close cycle 1. Game design (G2–G6) is still Research. User asked 
 3. [`.cursor/rules/project-map.mdc`](../../.cursor/rules/project-map.mdc) — invariants only; map stays in `AGENTS.md` (S3).
 4. [`spec/ROADMAP.md`](../../spec/ROADMAP.md) — live Cycle is `LOOP.md`; drop the dead cycle-0 gate (S4).
 5. [`.gitignore`](../../.gitignore) — ignore junk before cycle 2 artifacts (S6).
-6. [`AGENTS.md`](../../AGENTS.md) — entry-file convention (S7); this repo is the kit plus one test game (P7).
+6. [`AGENTS.md`](../../AGENTS.md) — entry-file convention (S7); this repo is the kit plus one test game (G1).
 7. [`.cursor/skills/reflect-cycle/SKILL.md`](../../.cursor/skills/reflect-cycle/SKILL.md) and [`phases.md`](../phases.md) — mid-cycle process Reflection does not advance the Cycle.
-8. [`OPEN_QUESTIONS.md`](../OPEN_QUESTIONS.md) — lock S1–S7, P7, G1.
+8. [`OPEN_QUESTIONS.md`](../OPEN_QUESTIONS.md) — lock S1–S7 and G1.
 
 ## Not applied
 

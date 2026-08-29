@@ -1,5 +1,7 @@
 # Review: bootstrap-workflow
 
+> Cycle 1 correction: process terms now live in `process/glossary.md`; `wiki/glossary.md` is game-only.
+
 **Reviewer:** agent (human confirm: user asked to run `reflect-cycle` in the same implement pass)
 **Date:** 2026-08-29
 **Verdict:** ready for Reflection
@@ -21,8 +23,10 @@ Added to `process/review-checklist.md` during this Review: blocking OPEN_QUESTIO
   - `spec.md`, `tasks.md`, `review.md`, plus `tests/session-map.feature`, `gherkin-before-tasks.feature`, `review-and-reflect.feature`
 - [x] **Gherkin spec** existed before implementation Tasks were executed
   - `.feature` files landed before T8–T12. T1–T7 *are* installing the contract; later Features must not repeat that exception.
-- [x] Terms match `wiki/glossary.md`
+- [x] Terms match `process/glossary.md`
   - Specs and skills use Roadmap, Cycle, Phase, Feature, Gherkin spec, Task, Review, ADR.
+- [x] Game Design terms: `wiki/glossary.md`
+
 
 ## Standards
 

@@ -33,3 +33,4 @@ Change only in a later Reflection.
 | G6 | Single-player only? | |
 | A1 | ADR template (e.g. MADR)? | Cycle 2 |
 | A2 | Deterministic game-rule tests vs engine-coupled tests? | After runner **ADR** |
+| A3 | Where will source code and executable tests live? | Decide with the tech-stack **ADR** in Cycle 2; do not create a source tree before then |
