@@ -1,5 +1,6 @@
 # Reflections
 
-One file per closed **Cycle**: `cycle-N.md`.
+- Close a Cycle: `cycle-N.md`
+- Mid-cycle process Reflection (does not close the Cycle): `cycle-N-process.md`
 
-Written by the `reflect-cycle` skill. Each file must include: what we learned, what to change in process/rules/skills, and whether those edits were applied.
+Each file must include: what we learned, concrete edits (path + change), whether they were applied, and whether the Cycle advanced.

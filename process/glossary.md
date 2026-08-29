@@ -29,3 +29,4 @@ Prefer these terms; aliases in the last column are not used in specs, skills, or
 - **Tests** — until a test runner exists, “tests pass” means the **Gherkin spec** is complete, terms match both glossaries, and the walkthrough in `tasks.md` is done. Runnable harness is an **ADR** in a later Cycle.
 - **Workflow** — the documented loop in `process/`. Not GitHub Actions. Not a Cursor Automation (name those explicitly).
 - **Glossary** — two files on purpose: this file (process) and `wiki/glossary.md` (game).
+- **Closed Feature records** — `spec/<slug>/tasks.md` and `review.md` after close are a snapshot. Do not rewrite them to match later process changes; put a one-line note if needed.

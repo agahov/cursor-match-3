@@ -43,5 +43,7 @@ flowchart TD
 ## Reflection
 
 - Run `reflect-cycle` when `LOOP.md` is this Phase, or when the user explicitly asks to reflect or close the Cycle.
-- Write `process/reflections/cycle-N.md` with concrete edits; apply them here (or wait if the user wants to approve first).
-- Advance [`LOOP.md`](LOOP.md) to the next Cycle, Phase **research**.
+- Write `process/reflections/cycle-N.md` (close Cycle) or `cycle-N-process.md` (mid-cycle process only).
+- Propose concrete edits; apply them here (or wait if the user wants to approve first).
+- **Close Cycle:** advance [`LOOP.md`](LOOP.md) to the next Cycle, Phase **research**.
+- **Mid-cycle:** do not change Cycle or Phase; update **Next action** if needed.
