@@ -1,0 +1,13 @@
+---
+description: Feature folder contract under spec/ — slug names, required files
+globs: spec/**
+alwaysApply: false
+---
+
+# Spec contract
+
+Every Feature is `spec/<slug>/` with `spec.md`, `tests/*.feature`, `tasks.md`, and `review.md`.
+
+Write the Gherkin spec before executing Tasks. Scaffold from `spec/_templates/feature/` via `new-feature`.
+
+“Tests pass” (until a runner ADR): see `process/glossary.md`.

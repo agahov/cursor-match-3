@@ -1,0 +1,16 @@
+---
+description: Project map, two glossaries, Gherkin-before-tasks, current loop phase
+alwaysApply: true
+---
+
+# Project map
+
+- `wiki/` — game design. Game terms: `wiki/glossary.md`
+- `architecture/` — ADRs, tech stack
+- `spec/` — Roadmap and Features (`spec/<slug>/`, never `feature_N`)
+- `process/` — loop (`LOOP.md`) and process terms (`process/glossary.md`)
+- `.cursor/rules/` — invariants. `.cursor/skills/` — procedures
+
+Read `process/LOOP.md`. Use both glossaries. Do not implement a Feature until `spec/<slug>/tests/*.feature` exists.
+
+Edit rules and skills only in Reflection, or when the user explicitly asks.
