@@ -26,11 +26,11 @@ Change only in a later Reflection.
 
 | ID | Question | Notes |
 | --- | --- | --- |
-| G2 | Platform? | web / desktop / mobile |
-| G3 | Engine candidates? | After G2 |
-| G4 | First playable scope? | Cycle 3 Feature boundary |
-| G5 | Art: original vs placeholders? | |
-| G6 | Single-player only? | |
+| G2 | Platform? | Provisional recommendation: **web** for the lowest-friction workflow fixture; confirm before Cycle 2. |
+| G3 | Engine candidates? | Keep candidates unselected until Cycle 2: browser canvas/DOM, Godot, or Unity. Compare after G2 is confirmed. |
+| G4 | First playable scope? | Provisional boundary is documented in [`wiki/concepts/match-3-core.md`](../wiki/concepts/match-3-core.md): one local board, legal swaps, match resolution, cascades, score, moves, win/lose. |
+| G5 | Art: original vs placeholders? | Provisional recommendation: accessible placeholders first; original art is deferred. |
+| G6 | Single-player only? | Provisional recommendation: local single-player only; no accounts or network dependency. |
 | A1 | ADR template (e.g. MADR)? | Cycle 2 |
 | A2 | Deterministic game-rule tests vs engine-coupled tests? | After runner **ADR** |
 | A3 | Where will source code and executable tests live? | Decide with the tech-stack **ADR** in Cycle 2; do not create a source tree before then |
