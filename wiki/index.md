@@ -9,7 +9,7 @@ How the **game** works: fantasy, rules, systems, player-facing language.
 
 Process, loop, and workflow language live in `process/`, not here.
 
-Match-3 design is the work of cycle 1. The core loop and first-slice
-boundaries are documented as an agreed baseline in
-`concepts/match-3-core.md`; playtesting still needs to validate the tuning
-values and win/lose balance.
+The core loop and first-slice boundaries are an agreed baseline in
+`concepts/match-3-core.md`. Per the Roadmap, further game design happens
+slice-by-slice in **Cycle 3 (Vertical slice)**; playtesting still needs to
+validate the tuning values and win/lose balance.
