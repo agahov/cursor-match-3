@@ -44,6 +44,10 @@ a new session, or a scheduled automation).
   [`../wiki/decisions.md`](../wiki/decisions.md) and
   [`../architecture/open-questions.md`](../architecture/open-questions.md).
 - Scan `wiki/` for game-design gaps. Add game terms to `wiki/glossary.md`. Process terms go in `process/glossary.md`.
+- Resolve open questions **interactively** with the `grill-research` skill: one
+  question at a time, each with a recommended answer, exploring the repo instead
+  of asking when the answer already exists. Record answers as **proposed**
+  directions; locking happens in Planning/ADRs.
 - Improve the method only if a prior Reflection already approved the change, or the user asked.
 
 ### Planning
