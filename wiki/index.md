@@ -3,6 +3,7 @@
 How the **game** works: fantasy, rules, systems, player-facing language.
 
 - Game dictionary: [`glossary.md`](glossary.md)
+- Game design decisions: [`decisions.md`](decisions.md)
 - Diagrams and optional interactive HTML: [`concepts/`](concepts/)
 - Core Match-3 research: [`concepts/match-3-core.md`](concepts/match-3-core.md)
 

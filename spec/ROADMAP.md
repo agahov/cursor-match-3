@@ -1,6 +1,6 @@
 # Roadmap
 
-High-level view of the project. Features live in `spec/<slug>/`. **Current Cycle and Phase:** [`process/LOOP.md`](../process/LOOP.md).
+High-level view of the project. Features live in `spec/<slug>/`. **Current Cycle and Phase:** [`FOCUS.md`](FOCUS.md).
 
 | Cycle | Focus | Outcome |
 | --- | --- | --- |

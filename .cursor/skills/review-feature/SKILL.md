@@ -5,7 +5,7 @@ description: Reviews a Feature against process/review-checklist.md for architect
 
 # Review feature
 
-1. Identify `spec/<slug>/` from the user or from `process/LOOP.md`.
+1. Identify `spec/<slug>/` from the user or from `spec/FOCUS.md`.
 2. Read `spec.md`, `tests/*.feature`, `tasks.md`, and [`process/review-checklist.md`](../../../process/review-checklist.md).
 3. Copy every checklist item into `spec/<slug>/review.md`. Mark pass/fail with evidence (paths, short quotes).
 4. If a gap is systematic (will apply to future Features), add an item to `process/review-checklist.md` and note that in the Review.

@@ -21,7 +21,7 @@ Prefer these terms; aliases in the last column are not used in specs, skills, or
 - A **Cycle** contains four **Phases**.
 - **Planning** produces or updates a **Feature**.
 - A **Feature** has one **Gherkin spec** (one or more `.feature` files) and many **Tasks**.
-- **Implementation** ends with a **Review**, then **LOOP.md** is set to Reflection.
+- **Implementation** ends with a **Review**, then **FOCUS.md** is set to Reflection.
 - **Reflection** may change process files, rules, and skills; it does not add game Features.
 
 ## Flagged ambiguities

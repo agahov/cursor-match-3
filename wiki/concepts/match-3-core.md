@@ -98,6 +98,7 @@ outcome.
 - Special tiles can be evaluated as a later Feature only after the baseline
   loop is stable.
 
-Platform and engine candidates remain tracked in
-[`process/OPEN_QUESTIONS.md`](../../process/OPEN_QUESTIONS.md); this note does
-not select either one.
+Platform decisions are in [`../decisions.md`](../decisions.md); engine and
+rendering candidates are tracked in
+[`../../architecture/open-questions.md`](../../architecture/open-questions.md).
+This note does not select either one.

@@ -24,6 +24,6 @@ Copy the items into `spec/<slug>/review.md` and mark each one.
 
 ## Process
 
-- [ ] `process/LOOP.md` still names this Feature until Review is signed off
-- [ ] Blocking `OPEN_QUESTIONS.md` items for this Cycle are locked (or none apply)
+- [ ] `spec/FOCUS.md` still names this Feature until Review is signed off
+- [ ] Blocking open questions for this Cycle (`wiki/decisions.md`, `architecture/open-questions.md`) are locked (or none apply)
 - [ ] Checklist updates (if any) are written back to this file

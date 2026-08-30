@@ -10,4 +10,4 @@ description: Scaffolds spec/<slug>/{spec.md,tests/*.feature,tasks.md,review.md} 
 3. Copy [`spec/_templates/feature/`](../../../spec/_templates/feature/) to `spec/<slug>/`.
 4. Fill `spec.md` (links to wiki/architecture). Write `tests/*.feature` **before** executable Tasks. Use both glossaries.
 5. List Tasks that satisfy those scenarios. Leave `review.md` empty.
-6. If this is current Implementation work, point `process/LOOP.md` at it.
+6. If this is current Implementation work, point `spec/FOCUS.md` at it.

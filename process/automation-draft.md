@@ -10,5 +10,5 @@ Do not treat this file as a GitHub Action. It is a reminder kickoff; the `run-lo
 | Description | Scheduled kickoff that continues the current Cycle Phase. It does not replace in-session skills. |
 | Trigger | Schedule. Pick daily or weekly in the Automations editor. |
 | Tools | Cloud agent on this repo |
-| Instructions | Read `process/LOOP.md` and follow the `run-loop-phase` skill. Do only the named Phase. Process terms: `process/glossary.md`. Game terms: `wiki/glossary.md`. If the Phase is Reflection, run `reflect-cycle`. Honor any **Do not** lines in `LOOP.md`. Update `LOOP.md` next action when the turn ends. |
+| Instructions | Read `spec/FOCUS.md` and follow the `run-loop-phase` skill. Do only the named Phase. Process terms: `process/glossary.md`. Game terms: `wiki/glossary.md`. If the Phase is Reflection, run `reflect-cycle`. Honor any **Do not** lines in `FOCUS.md`. Update `spec/FOCUS.md` next action when the turn ends. |
 | To finish in editor | Cadence, repo, and branch. Save only after the referenced files exist on that branch. |
