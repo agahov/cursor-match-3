@@ -6,5 +6,6 @@ High-level view of the project. Features live in `spec/<slug>/`. **Current Cycle
 | --- | --- | --- |
 | **0** | Workflow skeleton | Folders, glossary seed, rules/skills, Feature `bootstrap-workflow`, process defaults locked, one Reflection |
 | **1** | Game design core | Match-3 as the test fixture: fantasy, board, match rules, game terms in `wiki/glossary.md`, concept diagrams |
-| **2** | Tech stack ADR | Engine, language, test runner; `architecture/tech-stack.md` filled |
-| **3** | First playable slice | One vertical Feature with real Gherkin and code |
+| **2** | Tech spec | Engine, language, test runner selected; `architecture/tech-stack.md` filled. ADR-only — no game code |
+| **3** | Empty project + module comms | Buildable empty project skeleton; modules defined with working communication/wiring between them; no game features yet |
+| **4** | Vertical slice | First vertical slice of game features with real Gherkin and code |
