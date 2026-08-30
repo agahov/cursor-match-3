@@ -5,16 +5,20 @@ them with **ADR**s (see [`adr/`](adr/)) in the tech-stack Cycle. Game design
 decisions live in [`../wiki/decisions.md`](../wiki/decisions.md); method
 conventions live in [`../process/conventions.md`](../process/conventions.md).
 
-## Direction (proposed, not locked)
+## Resolved (Cycle 1)
 
-| ID | Question | Notes |
+| ID | Question | Resolution |
 | --- | --- | --- |
-| G3 | Engine and rendering candidates? | Preferred direction: **PixiJS** for rendering, **bitecs** for ECS logic, TypeScript, and Vue for UI. Formal runtime/engine boundaries remain an ADR |
-| A1 | ADR template (e.g. MADR)? | Decide in the tech-stack Cycle |
-| A2 | Deterministic game-rule tests vs engine-coupled tests? | After the runner **ADR** |
-| A3 | Where will source code and executable tests live? | Decide with the tech-stack **ADR**; do not create a source tree before then |
-| A4 | ECS component model and coding style? | Proposed: data-only bitecs components and closure/function-based systems; no class-based ECS components |
-| A5 | How does ECS connect to UI? | Proposed: ECS is the source of truth; commands go in and read-only projections come out. Vue must not mutate the world directly |
-| A6 | How does board input enter the simulation? | Proposed: PixiJS owns board hit-testing; Vue owns HUD/controls; both dispatch through the same command port |
-| A7 | How are reusable systems and special tags reviewed? | Proposed: capability/marker tags plus data components; systems query compositions. Reviewers check for system reuse and keep rule logic out of adapters |
-| A8 | How is the architecture Cycle tracked? | **ADR-only**, with no product Feature. The Planning playbook needs a documented accommodation for an ADR-only Cycle |
+| G3 | Engine and rendering candidates? | **Locked**: TypeScript + PixiJS (render) + bitecs (ECS) + Vue (UI) — [ADR 0002](adr/0002-runtime-stack.md) |
+| A1 | ADR template (e.g. MADR)? | **MADR-lite** — [ADR 0001](adr/0001-adr-format-madr-lite.md) |
+| A2 | Deterministic game-rule tests vs engine-coupled tests? | Two tiers, deterministic-first — [ADR 0003](adr/0003-test-runner-and-code-layout.md) |
+| A3 | Where will source code and executable tests live? | Layout decided; **tree created in Cycle 2** — [ADR 0003](adr/0003-test-runner-and-code-layout.md) |
+| A4 | ECS component model and coding style? | Data-only components, function systems, no ECS classes — [ADR 0002](adr/0002-runtime-stack.md) |
+| A5 | How does ECS connect to UI? | ECS is source of truth; command in, read-only projection out — [ADR 0002](adr/0002-runtime-stack.md) |
+| A6 | How does board input enter the simulation? | Pixi board hit-testing + Vue HUD, both via one command port — [ADR 0002](adr/0002-runtime-stack.md) |
+| A7 | How are reusable systems and special tags reviewed? | Capability/marker tags + data components; rule logic out of adapters — [ADR 0002](adr/0002-runtime-stack.md) |
+| A8 | How is the architecture Cycle tracked? | **ADR-only** with a Gherkin *design-handoff* Feature (`spec/tech-spec-handoff/`). Accommodation folded into the Planning playbook in [`process/LOOP.md`](../process/LOOP.md) during Cycle 1 Reflection |
+
+## Still open
+
+None. New architecture questions get a row here and are resolved by an ADR.

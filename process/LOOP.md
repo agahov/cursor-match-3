@@ -51,6 +51,11 @@ a new session, or a scheduled automation).
 - Update [`../spec/ROADMAP.md`](../spec/ROADMAP.md) if the high-level view changed.
 - Pick the next **Feature**. Scaffold with `new-feature`.
 - Gherkin before executable Tasks (spec contract).
+- **ADR-only Cycle** (e.g. a tech-spec Cycle with no game code): the deliverable
+  is one or more **ADR**s, not product code. Still scaffold a Feature whose
+  Gherkin asserts the ADR deliverables exist and agree (a *design-handoff* spec);
+  its Tasks write the ADRs and fill `architecture/tech-stack.md`. Do not create a
+  source tree.
 
 ### Implementation
 
