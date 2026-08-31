@@ -3,7 +3,12 @@
 .env.*
 *.log
 node_modules/
+.pnpm-store/
 dist/
 build/
+coverage/
+playwright-report/
+test-results/
+.vite/
 *.pyc
 .Python

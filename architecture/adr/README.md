@@ -37,3 +37,5 @@ sections we actually read. Full MADR is more ceremony than a solo/agent loop nee
 | [0001](0001-adr-format-madr-lite.md) | ADR format: MADR-lite | accepted |
 | [0002](0002-runtime-stack.md) | Runtime stack: TypeScript + PixiJS + bitecs + Vue | accepted |
 | [0003](0003-test-runner-and-code-layout.md) | Test runner, test strategy, and code layout | accepted |
+| [0004](0004-module-communication-contract.md) | Module communication contract | accepted |
+| [0005](0005-project-scaffold.md) | Project scaffold | accepted |

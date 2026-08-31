@@ -19,19 +19,22 @@ conventions live in [`../process/conventions.md`](../process/conventions.md).
 | A7 | How are reusable systems and special tags reviewed? | Capability/marker tags + data components; rule logic out of adapters — [ADR 0002](adr/0002-runtime-stack.md) |
 | A8 | How is the architecture Cycle tracked? | **ADR-only** with a Gherkin *design-handoff* Feature (`spec/tech-spec-handoff/`). Accommodation folded into the Planning playbook in [`process/LOOP.md`](../process/LOOP.md) during Cycle 1 Reflection |
 
-## Open (Cycle 2 — empty project + module comms)
+## Resolved (Cycle 2 — empty project + module comms)
 
-Wiring questions for the buildable empty skeleton. Directions below are
-**proposed, not locked**; Planning resolves them (via an ADR where a choice is
-load-bearing) and the skeleton Feature implements them. No game features.
+Wiring for the buildable empty skeleton, locked in Planning. The skeleton
+Feature (`spec/project-skeleton/`) implements them. No game features.
 
-| ID | Question | Proposed direction |
+| ID | Question | Resolution |
 | --- | --- | --- |
-| A9 | Command shape and dispatch? | Commands are a plain **tagged union** (discriminated by `type`); one `dispatch(command)` on the port, **queued and drained on the tick** so ordering is deterministic. Input example: the board adapter hit-tests screen→cell and dispatches a select-cell command; a generic system drains it and sets a **selectable/selected marker in the world** — selection lives in the world, never written by the adapter |
-| A10 | Projection shape and delivery? | **Two paths, no serialized parallel model for the board.** *HUD (Vue):* a small **immutable snapshot** (aggregate state) in a `shallowRef`. *Board (Pixi):* a **render system** over general components + markers (per A4/A7) that syncs an adapter-side entity→`DisplayObject` map each tick — incremental per entity, so full-snapshot-vs-diff dissolves. Components partition into **rule-state** (logic: grid position, kind, markers like interactable/selectable) and **render-state** (pixels: x, y, size, style, derived from kind + theme). **Rule systems never touch render-state; render systems read rule-state + markers and never write it.** Concrete component sets are Cycle 3 design; the partition + render-as-systems rule is formalized in the module-comms ADR (0004) |
-| A11 | Who steps the simulation? | The composition root (`app/`) owns a **fixed-timestep** loop (rAF-driven); ECS systems run each tick. Alternative: step only on command. Decide in Planning |
-| A12 | RNG ownership / determinism? | A **seeded PRNG** created in `app/` and injected into the world; no system calls global `Math.random`. Seed is configurable for rule tests and E2E |
-| A13 | How is the module boundary enforced? | Folder convention **plus** an ESLint import-boundary rule; adapters (`render/`, `ui/`) import only from `ports/`, never `ecs/` internals |
-| A14 | What does the wiring/init smoke tier assert (ADR 0003)? | (a) a command dispatched through the port changes the projection; (b) each adapter constructs and subscribes without error. Headless, no real canvas |
-| A15 | Scaffolding choices? | Vite **`vue-ts`** template at repo root, a single package manager, Node LTS. Confirm exact versions in Planning |
-| A16 | Test-command API surface and gating? | `window.__match3 = { dispatch, getProjection }`, registered only in dev/test builds (`import.meta.env.DEV` / test flag) and stripped from production |
+| A9 | Command shape and dispatch? | Tagged-union commands, single `dispatch()`, **queued and drained per step**; adapters only produce commands, selection lives in the world — [ADR 0004](adr/0004-module-communication-contract.md) |
+| A10 | Projection shape and delivery? | Two paths (HUD immutable snapshot in `shallowRef`; board render-system + entity→`DisplayObject` map); rule-state vs render-state partition — [ADR 0004](adr/0004-module-communication-contract.md) |
+| A11 | Who steps the simulation? | **Fixed-timestep** rAF loop in `app/`: drain queue → run systems → emit projections; render interpolates — [ADR 0004](adr/0004-module-communication-contract.md) |
+| A12 | RNG ownership / determinism? | Seeded PRNG created in `app/`, injected into the world; no global `Math.random`; seed configurable — [ADR 0004](adr/0004-module-communication-contract.md) |
+| A13 | How is the module boundary enforced? | ESLint import-boundary rule: **UI imports only `ports/`**; render systems are the board's read-only read path — [ADR 0004](adr/0004-module-communication-contract.md) |
+| A14 | What does the wiring/init smoke tier assert? | Command→projection round trip after a step + adapters construct/subscribe headless — [ADR 0004](adr/0004-module-communication-contract.md) |
+| A15 | Scaffolding choices? | Vite **`vue-ts`** at repo root, **pnpm**, Node LTS pinned — [ADR 0005](adr/0005-project-scaffold.md) |
+| A16 | Test-command API surface and gating? | `window.__match3 = { dispatch, getProjection }`, dev/test-only, stripped from production — [ADR 0004](adr/0004-module-communication-contract.md) |
+
+## Still open
+
+None. New architecture questions get a row here and are resolved by an ADR.
