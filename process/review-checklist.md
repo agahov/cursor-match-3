@@ -8,6 +8,7 @@ Copy the items into `spec/<slug>/review.md` and mark each one.
 
 - [ ] Change fits the current **ADR**s and `architecture/tech-stack.md` (or is process-only and does not imply a stack)
 - [ ] No new engine, library, or top-level folder unless an **ADR** or Reflection said so
+- [ ] New runtime/dev **dependencies** trace to an **ADR** (or are flagged for the next Reflection)
 
 ## Spec contract
 

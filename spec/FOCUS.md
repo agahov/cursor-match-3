@@ -6,9 +6,9 @@ The Cycle sequence is [`ROADMAP.md`](ROADMAP.md). Update this file whenever the
 Cycle, Phase, or Feature changes.
 
 - **Cycle:** 2 — Empty project + module comms
-- **Phase:** implementation
-- **Feature in progress:** `project-skeleton` (Gherkin written; ADRs 0004–0005 lock the contract)
-- **Next action:** T1–T11 done and verified (typecheck, 4/4 tests, lint, build; `dist/` strips `__match3`). Remaining: T12 — walk the `project-skeleton` scenarios against the repo, then run `review-feature`. On a ready verdict, set Phase to reflection.
+- **Phase:** reflection
+- **Feature in progress:** `project-skeleton` (Implementation complete; review verdict **ready for Reflection**)
+- **Next action:** Run `reflect-cycle` to close Cycle 2 — write `process/reflections/cycle-2.md`, apply process edits, and advance FOCUS to **Cycle 3 (Vertical slice), Phase research**. Carry-forwards: TS-pin vs vue-tsc, A17 executable Gherkin, `.vue` linting.
 
 
-Last updated: 2026-08-30 (Cycle 2 Planning complete; ADRs 0004–0005 locked; project-skeleton scaffolded)
+Last updated: 2026-08-31 (Cycle 2 Implementation + review done; ready for Reflection)

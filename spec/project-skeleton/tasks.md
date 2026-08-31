@@ -2,9 +2,9 @@
 
 Gherkin walkthrough (meaning of "tests pass": `process/glossary.md`):
 
-- [ ] Scenarios are complete and unambiguous
-- [ ] Terms match `process/glossary.md` and `wiki/glossary.md`
-- [ ] Each scenario can be walked against the repo or product
+- [x] Scenarios are complete and unambiguous
+- [x] Terms match `process/glossary.md` and `wiki/glossary.md`
+- [x] Each scenario can be walked against the repo or product
 
 ## Implementation
 
@@ -19,7 +19,7 @@ Gherkin walkthrough (meaning of "tests pass": `process/glossary.md`):
 - [x] T9: Expose `window.__match3 = { dispatch, getProjection }` in dev/test only; strip from production (A16) — verified absent from `dist/`
 - [x] T10: Add the ESLint import-boundary rule so UI imports only `ports/` (A13) — verified the rule rejects a UI→ECS import
 - [x] T11: Wiring/init smoke test in Vitest: command→projection round trip + adapters construct/subscribe headless (A14) — 4/4 pass
-- [ ] T12: Walk the scenarios against the repo; then run `review-feature`
+- [x] T12: Walk the scenarios against the repo; then run `review-feature` — `review.md`, verdict ready for Reflection
 
 ## Verification (2026-08-31)
 

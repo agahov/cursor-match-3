@@ -38,3 +38,9 @@ Feature (`spec/project-skeleton/`) implements them. No game features.
 ## Still open
 
 None. New architecture questions get a row here and are resolved by an ADR.
+
+## Deferred
+
+| ID | Item | Notes |
+| --- | --- | --- |
+| A17 | Make `.feature` files executable | **Approach decided** — Gherkin-over-Vitest **step-binding** + Playwright `@e2e` ([ADR 0003](adr/0003-test-runner-and-code-layout.md)). **Timing deferred** to a later iteration. Until then a Feature's `.feature` is the contract, covered by hand-written Vitest (e.g. `tests/wiring.smoke.spec.ts`) with a manual mapping. First candidate to bind: `project-skeleton` |
