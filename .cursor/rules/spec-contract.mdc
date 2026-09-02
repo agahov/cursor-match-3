@@ -10,4 +10,4 @@ Every Feature is `spec/<slug>/` with `spec.md`, `tests/*.feature`, `tasks.md`, a
 
 Write the Gherkin spec before executing Tasks. Scaffold from `spec/_templates/feature/` via `new-feature`.
 
-“Tests pass” (until a runner ADR): see `process/glossary.md`.
+“Tests pass”: see `process/glossary.md` (Gherkin is the contract; Vitest is the harness until A17).

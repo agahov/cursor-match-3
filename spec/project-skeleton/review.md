@@ -47,3 +47,5 @@ All eight scenarios in `tests/project-skeleton.feature` walked against the repo:
 - **TS pin:** `typescript@5.6.3` pinned because `vue-tsc` cannot drive the registry's `typescript@7`. Revisit when `vue-tsc` supports TS 7.
 - **A17:** bind `.feature` files to executable steps (Gherkin-over-Vitest) in a later iteration; `project-skeleton` is the first candidate.
 - **`.vue` linting:** ESLint currently ignores `.vue` (no vue-eslint-parser); the import-boundary rule covers `ui/*.ts`. Could add `.vue` linting later.
+
+Note (2026-09-02): `.vue` linting added (`eslint-plugin-vue` + `vue-eslint-parser`); import-boundary now covers `src/ui/**/*.{ts,vue}`.

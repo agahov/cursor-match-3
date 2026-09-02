@@ -6,5 +6,6 @@ How the software is built: decisions, structure, and tech stack.
 - [`adr/`](adr/) — architecture decision records
 - [`open-questions.md`](open-questions.md) — engine, ECS, and runner questions
 
-The stack was locked in **Cycle 1** (Tech spec) via [ADRs 0001–0003](adr/). The
-source tree is built in **Cycle 2** (empty project + module comms).
+The stack was locked in **Cycle 1** (ADRs 0001–0003). The empty source tree and
+module wiring landed in **Cycle 2** (ADRs 0004–0005). Game features start in
+**Cycle 3**.

@@ -26,7 +26,7 @@ Prefer these terms; aliases in the last column are not used in specs, skills, or
 
 ## Flagged ambiguities
 
-- **Tests** — until a test runner exists, “tests pass” means the **Gherkin spec** is complete, terms match both glossaries, and the walkthrough in `tasks.md` is done. Runnable harness is an **ADR** in a later Cycle.
+- **Tests** — two layers until **A17**. The **Gherkin spec** (`spec/<slug>/tests/*.feature`) is the contract, authored in Planning; it is **not executed** and we do **not** generate test files from it. “Tests pass” means: scenarios are complete, terms match both glossaries, the walkthrough in `tasks.md` is done, **and** matching **hand-written Vitest** (wiring/rules) is green. Binding `.feature` files to Vitest steps is deferred (A17). Playwright `@e2e` is a later-slice contract.
 - **Workflow** — the documented loop in `process/`. Not GitHub Actions. Not a Cursor Automation (name those explicitly).
 - **Glossary** — two files on purpose: this file (process) and `wiki/glossary.md` (game).
 - **Closed Feature records** — `spec/<slug>/tasks.md` and `review.md` after close are a snapshot. Do not rewrite them to match later process changes; put a one-line note if needed.

@@ -5,10 +5,10 @@ abstract loop and its playbooks live in [`../process/LOOP.md`](../process/LOOP.m
 The Cycle sequence is [`ROADMAP.md`](ROADMAP.md). Update this file whenever the
 Cycle, Phase, or Feature changes.
 
-- **Cycle:** 2 — Empty project + module comms
-- **Phase:** reflection
-- **Feature in progress:** `project-skeleton` (Implementation complete; review verdict **ready for Reflection**)
-- **Next action:** Run `reflect-cycle` to close Cycle 2 — write `process/reflections/cycle-2.md`, apply process edits, and advance FOCUS to **Cycle 3 (Vertical slice), Phase research**. Carry-forwards: TS-pin vs vue-tsc, A17 executable Gherkin, `.vue` linting.
+- **Cycle:** 3 — Vertical slice
+- **Phase:** research
+- **Feature in progress:** none (do not scaffold until Planning)
+- **Next action:** Research the first vertical slice with `grill-research`. Start from [`wiki/concepts/match-3-core.md`](../wiki/concepts/match-3-core.md) (G4). Game design emerges per slice; do not bind executable Gherkin unless asked (A17 deferred).
 
 
-Last updated: 2026-08-31 (Cycle 2 Implementation + review done; ready for Reflection)
+Last updated: 2026-09-01 (Cycle 2 closed; Cycle 3 research)

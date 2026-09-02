@@ -64,6 +64,7 @@ a new session, or a scheduled automation).
 ### Implementation
 
 - Work Tasks in `spec/<slug>/tasks.md` against the **Gherkin spec**. “Tests pass” is defined in [`glossary.md`](glossary.md).
+- Until A17: cover Gherkin with **hand-written Vitest**; do not execute `.feature` files and do not generate tests from them.
 - When Tasks and walkthrough are done, run `review-feature`.
 - After a **ready for Reflection** verdict (and human confirm, unless the user asked to continue), set [`../spec/FOCUS.md`](../spec/FOCUS.md) Phase to **reflection**. Do not skip to the next Cycle.
 

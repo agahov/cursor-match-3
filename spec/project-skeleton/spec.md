@@ -1,6 +1,6 @@
 # Feature: project-skeleton
 
-**Status:** planning
+**Status:** closed (cycle 2)
 
 ## Intent
 
@@ -21,5 +21,5 @@ scoring** — only the empty skeleton and the wiring that later Cycles build on.
 
 ## Gherkin
 
-See `tests/`. Executable once the project exists: the wiring/init smoke tier
-(ADR 0003/0004) backs the round-trip and adapter-init scenarios.
+See `tests/`. Until A17, the `.feature` is the contract; `tests/wiring.smoke.spec.ts`
+covers it (hand-written Vitest). Walkthrough meaning of “tests pass”: `process/glossary.md`.

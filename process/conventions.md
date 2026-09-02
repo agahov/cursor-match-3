@@ -17,7 +17,7 @@ questions are in [`../architecture/open-questions.md`](../architecture/open-ques
 | P3 | Review sign-off | **Agent fills** `review.md`; **human confirms** |
 | P4 | Wiki format | **Markdown + Mermaid** default; interactive HTML only under `wiki/concepts/<name>/` |
 | P5 | Editing rules/skills | **Only in Reflection**, or when the user explicitly asks |
-| P6 | Gherkin runner | **Deferred** until the tech-stack **ADR** |
+| P6 | Gherkin runner | **Deferred (A17)** — `.feature` files stay the contract; cover them with hand-written Vitest. Do not generate tests from Gherkin. Bind to Vitest steps in a later iteration |
 
 ## Structure conventions
 
