@@ -38,7 +38,9 @@ Feature (`spec/project-skeleton/`) implements them. No game features.
 
 ## Still open
 
-None. New architecture questions get a P8 row here and are resolved by an ADR.
+| ID | Type | Status | Depends | Item |
+| --- | --- | --- | --- | --- |
+| A18 | research | proposed | G8, G9 | **Two entity kinds.** Cells are grid-slot entities (Feature 1). Tiles are separate entities that spawn on the top line and fall (Feature 2). Cells persist when tiles later clear. Lock in an ADR in Planning. |
 
 ## Deferred
 

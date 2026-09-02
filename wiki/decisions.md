@@ -18,3 +18,4 @@ New rows use the P8 schema.
 | G6 | research | locked | | Single-player only? | **Local single-player only**; no accounts or network dependency |
 | G7 | research | proposed | G4 | How small are Cycle 3 Features? | **Thinner than G4.** G4 stays the Cycle playable boundary, not one Feature. First Features: (1) init board with empty cells; (2) spawn tiles that appear and fall (gravity/refill — reused after later clears). Match, swap, score, and win/lose come after. |
 | G8 | research | proposed | G7 | Feature 1 boundary? | **Rendered 8×8 empty cells.** Start/reset rebuilds the grid. No tiles, spawn, gravity, or selection. Board size is the match-3-core starting point, tunable later. |
+| G9 | research | proposed | G8 | Feature 2 boundary? | **Tiles appear on the top line and fall down.** Start/reset fills the 8×8 by repeating that until every cell is occupied. Same path later for refill after clears. Six placeholder kinds (G5). No match detection. |
