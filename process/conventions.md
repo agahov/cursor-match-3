@@ -30,3 +30,12 @@ questions are in [`../architecture/open-questions.md`](../architecture/open-ques
 | S5 | Cursor Automation | **Draft only** (`automation-draft.md`); create it when the user asks |
 | S6 | `.gitignore` | Present (OS, env, common build dirs) |
 | S7 | Entry files | `wiki/index.md`, `architecture/index.md`, `spec/ROADMAP.md`; loop in `process/LOOP.md`, state in `spec/FOCUS.md` |
+
+## Proposed (Cycle 3 Research)
+
+Directions from the process-simplification grill. Not locked until Reflection.
+
+| ID | Topic | Convention |
+| --- | --- | --- |
+| P7 | Document ownership | **One owner per fact.** Other files may link to that owner; they must not copy the fact. `spec/FOCUS.md` is the only live pointer (Cycle, Phase, Feature, next action, and which wiki/architecture pages are in play). Wiki and architecture carry **status** plus **origin** (the Cycle that created them), never “we are in Cycle N”. |
+| P8 | Work-item schema | **One schema, two homes.** Columns: `ID`, `type`, `status`, `depends`, `item`. Types: `research`, `docs`, `structure`, `process`, `code`. Research home: `architecture/open-questions.md` (architecture) and `wiki/decisions.md` (game). Implementation home: `spec/<slug>/tasks.md` (P2) — tasks **reference** question IDs; they do not re-list them. |

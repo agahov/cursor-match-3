@@ -8,7 +8,7 @@ Cycle, Phase, or Feature changes.
 - **Cycle:** 3 — Vertical slice
 - **Phase:** research
 - **Feature in progress:** none (do not scaffold until Planning)
-- **Next action:** Research the first vertical slice with `grill-research`. Start from [`wiki/concepts/match-3-core.md`](../wiki/concepts/match-3-core.md) (G4). Game design emerges per slice; do not bind executable Gherkin unless asked (A17 deferred).
+- **Next action:** Finish the process-simplification grill (Q3: Gherkin as a property of `type: code`). Then continue first-slice research from [`wiki/concepts/match-3-core.md`](../wiki/concepts/match-3-core.md) (G4).
+- **In play:** [`wiki/concepts/match-3-core.md`](../wiki/concepts/match-3-core.md). Process grill: [`process/conventions.md`](../process/conventions.md) proposed P7, P8.
 
-
-Last updated: 2026-09-01 (Cycle 2 closed; Cycle 3 research)
+Last updated: 2026-09-02 (P7–P8 proposed; process grill Q3)
