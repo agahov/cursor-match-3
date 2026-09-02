@@ -2,6 +2,8 @@
 
 **Status:** closed (cycle 2)
 
+> Closed record (S2). Do not copy process policy from this file.
+
 ## Intent
 
 Stand up the buildable empty project and wire the modules per ADRs 0002–0005:

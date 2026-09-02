@@ -6,8 +6,8 @@ alwaysApply: false
 
 # Spec contract
 
-Every Feature is `spec/<slug>/` with `spec.md`, `tests/*.feature`, `tasks.md`, and `review.md`.
+Every Feature is `spec/<slug>/` with `spec.md`, `tasks.md`, and `review.md`. Scaffold from `spec/_templates/feature/` via `new-feature`.
 
-Write the Gherkin spec before executing Tasks. Scaffold from `spec/_templates/feature/` via `new-feature`.
+If any Task is `type: code`, `tests/*.feature` must exist before those Tasks are executed.
 
-“Tests pass”: see `process/glossary.md` (Gherkin is the contract; Vitest is the harness until A17).
+“Tests pass”: `process/glossary.md`.

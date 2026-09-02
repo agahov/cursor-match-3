@@ -2,6 +2,8 @@
 
 **Status:** closed (cycle 0)
 
+> Closed record (S2). Do not copy process policy from this file.
+
 ## Intent
 
 Install a minimal, self-improving game-dev loop: wiki, architecture, spec, process, rules, and skills. Dogfood the pipeline on itself. Match-3 GDD and engine stay out of this Feature.

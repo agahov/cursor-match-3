@@ -13,15 +13,17 @@ Copy the items into `spec/<slug>/review.md` and mark each one.
 ## Spec contract
 
 - [ ] Feature folder is `spec/<slug>/` (slug, not `feature_N`)
-- [ ] `spec.md`, `tests/*.feature`, `tasks.md`, and `review.md` exist
-- [ ] **Gherkin spec** existed before implementation Tasks were executed
+- [ ] `spec.md`, `tasks.md`, and `review.md` exist
+- [ ] Tasks use the P8 schema; they reference research IDs instead of re-listing them
+- [ ] If any Task is `type: code`: `tests/*.feature` existed before those Tasks were executed, and no code row is `needs-spec`
+- [ ] If no Task is `type: code`: no `.feature` files (docs/structure/process Feature)
 - [ ] Terms match `process/glossary.md` (process) and `wiki/glossary.md` (game)
 
 ## Standards
 
 - [ ] Rules in `.cursor/rules/` stay short (one concern, examples if needed)
-- [ ] Skills stay procedural; playbooks were not copied into always-on rules
-- [ ] No extra docs that duplicate `AGENTS.md`, the Roadmap, or the glossary
+- [ ] Skills stay procedural; `process/LOOP.md` remains an index (P10)
+- [ ] No extra docs that duplicate `AGENTS.md`, the Roadmap, or the glossary (P7)
 
 ## Process
 

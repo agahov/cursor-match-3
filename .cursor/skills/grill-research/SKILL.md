@@ -21,11 +21,11 @@ A Research/Planning variation of the `grill-me` skill: resolve open questions
    - Otherwise ask a single, sharp question and **give your recommended answer**
      with a one-line rationale and the main alternative.
    - Wait for the reply before the next question. Walk each branch to closure.
-4. Record as you go — never lock silently:
-   - Architecture answers → a row/update in `architecture/open-questions.md`
-     (mark **proposed** vs resolved-by-ADR).
-   - Game answers → `wiki/decisions.md`; new game terms → `wiki/glossary.md`.
-   - Keep directions **proposed** until Planning locks them in an ADR.
+4. Record as you go — never lock silently. Use the P8 columns (`ID`, `type`,
+   `status`, `depends`, `item`):
+   - Architecture → `architecture/open-questions.md` (status **proposed** until
+     an ADR locks it).
+   - Game → `wiki/decisions.md`; new game terms → `wiki/glossary.md`.
 5. Do not edit rules, skills, or method files here — that is Reflection (P5) —
    unless the user explicitly asks.
 6. Stop when the questions are resolved or the user defers; update

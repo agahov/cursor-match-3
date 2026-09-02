@@ -1,9 +1,10 @@
 # Architecture open questions
 
-Engine, rendering, ECS, and test-runner questions for this project. Resolve
-them with **ADR**s (see [`adr/`](adr/)) in the tech-stack Cycle. Game design
-decisions live in [`../wiki/decisions.md`](../wiki/decisions.md); method
-conventions live in [`../process/conventions.md`](../process/conventions.md).
+Engine, rendering, ECS, and test-runner questions. Resolve them with **ADR**s
+(see [`adr/`](adr/)). Game decisions: [`../wiki/decisions.md`](../wiki/decisions.md).
+Method: [`../process/conventions.md`](../process/conventions.md).
+
+New rows use the P8 schema: `ID`, `type`, `status`, `depends`, `item`.
 
 ## Resolved (Cycle 1)
 
@@ -17,7 +18,7 @@ conventions live in [`../process/conventions.md`](../process/conventions.md).
 | A5 | How does ECS connect to UI? | ECS is source of truth; command in, read-only projection out — [ADR 0002](adr/0002-runtime-stack.md) |
 | A6 | How does board input enter the simulation? | Pixi board hit-testing + Vue HUD, both via one command port — [ADR 0002](adr/0002-runtime-stack.md) |
 | A7 | How are reusable systems and special tags reviewed? | Capability/marker tags + data components; rule logic out of adapters — [ADR 0002](adr/0002-runtime-stack.md) |
-| A8 | How is the architecture Cycle tracked? | **ADR-only** with a Gherkin *design-handoff* Feature (`spec/tech-spec-handoff/`). Accommodation folded into the Planning playbook in [`process/LOOP.md`](../process/LOOP.md) during Cycle 1 Reflection |
+| A8 | How is the architecture Cycle tracked? | **ADR-only** Feature (`spec/tech-spec-handoff/`). No source tree |
 
 ## Resolved (Cycle 2 — empty project + module comms)
 
@@ -37,10 +38,10 @@ Feature (`spec/project-skeleton/`) implements them. No game features.
 
 ## Still open
 
-None. New architecture questions get a row here and are resolved by an ADR.
+None. New architecture questions get a P8 row here and are resolved by an ADR.
 
 ## Deferred
 
-| ID | Item | Notes |
-| --- | --- | --- |
-| A17 | Make `.feature` files executable | **Approach decided** — Gherkin-over-Vitest **step-binding** + Playwright `@e2e` ([ADR 0003](adr/0003-test-runner-and-code-layout.md)). **Timing deferred** to a later iteration. Until then a Feature's `.feature` is the contract, covered by hand-written Vitest (e.g. `tests/wiring.smoke.spec.ts`) with a manual mapping. First candidate to bind: `project-skeleton` |
+| ID | Type | Status | Depends | Item |
+| --- | --- | --- | --- | --- |
+| A17 | code | deferred | A3 | Bind `.feature` files to Vitest steps (approach in [ADR 0003](adr/0003-test-runner-and-code-layout.md)). First candidate: `project-skeleton` |

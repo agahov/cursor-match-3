@@ -1,12 +1,12 @@
 ---
-description: Read FOCUS.md, Gherkin before Tasks, slugs, when rules may change
+description: Read FOCUS.md, slugs, Gherkin for code tasks, when rules may change
 alwaysApply: true
 ---
 
 # Invariants
 
-Read `spec/FOCUS.md` for the current Phase and follow it. The abstract loop is `process/LOOP.md`. Folder map: `AGENTS.md`.
+Read `spec/FOCUS.md` for the current Phase and follow it. Loop index: `process/LOOP.md`. Folder map: `AGENTS.md`.
 
-Do not implement a Feature until `spec/<slug>/tests/*.feature` exists. Feature folders are slugs, never `feature_N`.
+Do not execute `type: code` Tasks that are `needs-spec`. Feature folders are slugs, never `feature_N`.
 
 Edit rules and skills only in Reflection, or when the user explicitly asks.

@@ -4,7 +4,7 @@ Workflow kit plus one test game (Match-3). Two layers:
 
 **Method (abstract, reusable — how we work):**
 
-- `process/LOOP.md` — the abstract loop and per-Phase playbooks
+- `process/LOOP.md` — Cycle + Phase index
 - `process/glossary.md` — process terms. `process/conventions.md` — locked P*/S* defaults
 - `.cursor/rules/` — short invariants. `.cursor/skills/` — procedures
 - `spec/_templates/` — Feature scaffold

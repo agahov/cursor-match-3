@@ -9,7 +9,3 @@
 - Wiki:
 - Architecture:
 - Roadmap cycle:
-
-## Gherkin
-
-See `tests/`.

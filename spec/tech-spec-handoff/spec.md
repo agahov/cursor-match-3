@@ -2,6 +2,8 @@
 
 **Status:** closed (cycle 1)
 
+> Closed record (S2). Do not copy process policy from this file.
+
 ## Intent
 
 Cycle 1 is **ADR-only**: it selects the engine, language, and test runner and

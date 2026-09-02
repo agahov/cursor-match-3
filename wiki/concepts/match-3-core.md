@@ -1,6 +1,7 @@
 # Match-3 core loop
 
-**Status:** Cycle 1 research — agreed baseline; tuning pending
+**Status:** locked (tuning pending)  
+**Origin:** Cycle 1 / G4
 
 This note defines the smallest coherent Match-3 rule set for the workflow
 fixture. It is a design hypothesis, not a product commitment or an engine
