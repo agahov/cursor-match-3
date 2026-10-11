@@ -39,3 +39,4 @@ sections we actually read. Full MADR is more ceremony than a solo/agent loop nee
 | [0003](0003-test-runner-and-code-layout.md) | Test runner, test strategy, and code layout | accepted |
 | [0004](0004-module-communication-contract.md) | Module communication contract | accepted |
 | [0005](0005-project-scaffold.md) | Project scaffold | accepted |
+| [0006](0006-cells-and-tiles.md) | Cells and tiles as two entity kinds | accepted |

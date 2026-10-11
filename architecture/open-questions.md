@@ -36,11 +36,15 @@ Feature (`spec/project-skeleton/`) implements them. No game features.
 | A15 | Scaffolding choices? | Vite **`vue-ts`** at repo root, **pnpm**, Node LTS pinned — [ADR 0005](adr/0005-project-scaffold.md) |
 | A16 | Test-command API surface and gating? | `window.__match3 = { dispatch, getProjection }`, dev/test-only, stripped from production — [ADR 0004](adr/0004-module-communication-contract.md) |
 
+## Resolved (Cycle 3 — vertical slice)
+
+| ID | Question | Resolution |
+| --- | --- | --- |
+| A18 | How are cells and tiles represented in ECS? | **Two entity kinds** — [ADR 0006](adr/0006-cells-and-tiles.md) |
+
 ## Still open
 
-| ID | Type | Status | Depends | Item |
-| --- | --- | --- | --- | --- |
-| A18 | research | proposed | G8, G9 | **Two entity kinds.** Cells are grid-slot entities (Feature 1). Tiles are separate entities that spawn on the top line and fall (Feature 2). Cells persist when tiles later clear. Lock in an ADR in Planning. |
+None. New architecture questions get a P8 row here and are resolved by an ADR.
 
 ## Deferred
 
