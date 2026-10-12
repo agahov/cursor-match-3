@@ -27,6 +27,8 @@ Settled while charting:
 
 <!-- one line per resolved ticket: [title](issues/NN-slug.md): gist -->
 
+- [bitECS 0.4 API facts for the skeleton](issues/01-bitecs-0-4-api.md): plain-object components, `(world, eid, component)` order, inline `query`, observers + queues for add/remove, recycled ids.
+
 ## Not yet specified
 
 - Game loop timing: fixed or variable timestep, and the order of system phases.
